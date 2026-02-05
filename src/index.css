@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* Removed the black background color so we can control it in the App */
+  color: #1e3a8a; /* Default text color: Dark Blue */
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar (Blue Themed) */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #eff6ff; }
+::-webkit-scrollbar-thumb { background: #93c5fd; border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background: #3b82f6; }
