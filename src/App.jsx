@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { 
   Github, Linkedin, Mail, Code, ExternalLink, ChevronDown, 
   Terminal, Layout, Globe, Cpu, Trophy, Star, Send, 
-  Database, GitBranch, PenTool, Layers, CheckCircle 
+  Database, GitBranch, PenTool, Layers, CheckCircle, FileText 
 } from 'lucide-react';
 
 /* --- ANIMATIONS --- */
@@ -224,15 +224,34 @@ function App() {
             initial={{ opacity: 0 }} 
             animate={{ opacity: 1 }} 
             transition={{ delay: 1.8 }}
-            className="flex flex-wrap gap-4 justify-center md:justify-start"
+            className="flex flex-wrap gap-4 justify-center md:justify-start items-center"
           >
+            {/* View Projects Button */}
             <a href="#projects" className="px-8 py-3 bg-white text-purple-950 rounded-full font-bold hover:scale-105 transition-transform shadow-lg shadow-white/10">
               View Work
             </a>
+
+            {/* NEW Resume Button */}
+            <a 
+              href="/resume.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="px-6 py-3 border border-purple-500/30 bg-purple-500/10 text-purple-300 rounded-full font-bold hover:bg-purple-500/20 hover:scale-105 transition-all flex items-center gap-2"
+            >
+              <FileText size={20} /> Resume
+            </a>
+
+            {/* Social Icons */}
             <div className="flex gap-4 items-center px-4">
-              <a href="https://github.com/Oshadhi2003" className="text-purple-300 hover:text-white transition-colors"><Github size={24}/></a>
-              <a href="https://linkedin.com" className="text-purple-300 hover:text-white transition-colors"><Linkedin size={24}/></a>
-              <a href="mailto:oshadhimanage@gmail.com" className="text-purple-300 hover:text-white transition-colors"><Mail size={24}/></a>
+              <a href="https://github.com/Oshadhi2003" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:text-white transition-colors">
+                <Github size={24}/>
+              </a>
+              <a href="https://www.linkedin.com/in/oshadhi-manage-49032a346" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:text-white transition-colors">
+                <Linkedin size={24}/>
+              </a>
+              <a href="#contact" className="text-purple-300 hover:text-white transition-colors">
+  <Mail size={24}/>
+</a>
             </div>
           </motion.div>
         </div>
