@@ -50,7 +50,6 @@ const techStack = {
   backend: [
     { name: "Java & Python", icon: <Terminal size={16} /> },
     { name: "Spring Boot", icon: <Layers size={16} /> },
-    { name: "gRPC & REST", icon: <Globe size={16} /> },
     { name: "SQL & DBs", icon: <Database size={16} /> },
     { name: "Distributed Sys", icon: <Cpu size={16} /> },
   ],
@@ -58,13 +57,12 @@ const techStack = {
     { name: "JUnit 5", icon: <CheckCircle size={16} /> },
     { name: "Postman", icon: <Send size={16} /> },
     { name: "API Testing", icon: <Code size={16} /> },
-    { name: "Test Automation", icon: <Terminal size={16} /> },
+    { name: "Test Automation (Selenium)", icon: <Terminal size={16} /> },
   ],
   devops: [
     { name: "Git & GitHub", icon: <GitBranch size={16} /> },
     { name: "Agile / Scrum", icon: <Layers size={16} /> },
     { name: "SDLC & Analysis", icon: <FileText size={16} /> },
-    { name: "Node Recovery", icon: <Cpu size={16} /> },
   ]
 };
 
