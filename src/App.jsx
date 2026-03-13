@@ -39,85 +39,76 @@ const letter = {
   visible: { opacity: 1 },
 };
 
-/* --- DATA FROM RESUME --- */
+/* --- DATA FROM RESUME (UPDATED FOR SDLC/FULL-STACK) --- */
 const techStack = {
   frontend: [
-    { name: "React.js", icon: <Code /> },
-    { name: "React Native", icon: <Globe /> },
-    { name: "Tailwind CSS", icon: <Layout /> },
-    { name: "Figma", icon: <PenTool /> },
-    { name: "HCI Principles", icon: <Layout /> },
+    { name: "React.js / Native", icon: <Code size={16} /> },
+    { name: "Tailwind CSS", icon: <Layout size={16} /> },
+    { name: "UI/UX (Figma)", icon: <PenTool size={16} /> },
+    { name: "HCI Principles", icon: <Globe size={16} /> },
   ],
   backend: [
-    { name: "Python", icon: <Terminal /> },
-    { name: "Java", icon: <Code /> },
-    { name: "C Language", icon: <Terminal /> },
-    { name: "SQL", icon: <Database /> },
-    { name: "Distributed Systems", icon: <Layers /> },
+    { name: "Java & Python", icon: <Terminal size={16} /> },
+    { name: "Spring Boot", icon: <Layers size={16} /> },
+    { name: "gRPC & REST", icon: <Globe size={16} /> },
+    { name: "SQL & DBs", icon: <Database size={16} /> },
+    { name: "Distributed Sys", icon: <Cpu size={16} /> },
   ],
-  tools: [
-    { name: "Git & GitHub", icon: <GitBranch /> },
-    { name: "Postman", icon: <Send /> },
-    { name: "JIRA / Agile", icon: <CheckCircle /> },
-    { name: "VS Code", icon: <Code /> },
+  qa: [
+    { name: "JUnit 5", icon: <CheckCircle size={16} /> },
+    { name: "Postman", icon: <Send size={16} /> },
+    { name: "API Testing", icon: <Code size={16} /> },
+    { name: "Test Automation", icon: <Terminal size={16} /> },
+  ],
+  devops: [
+    { name: "Git & GitHub", icon: <GitBranch size={16} /> },
+    { name: "Agile / Scrum", icon: <Layers size={16} /> },
+    { name: "SDLC & Analysis", icon: <FileText size={16} /> },
+    { name: "Node Recovery", icon: <Cpu size={16} /> },
   ]
 };
 
 const projects = [
   {
-    title: "Mentora - AI Career App",
-    category: "Mobile | UI/UX",
-    tech: ["React Native", "HCI Principles"],
-    desc: "Engineered a cross-platform mobile application applying strict Human-Computer Interaction (HCI) principles. Designed an accessible navigation structure validated through user testing to simplify complex career data.",
-    link: "https://github.com/Oshadhi2003"
-  },
-  {
-    title: "Kinetic Kicks (Smart Shoe)",
-    category: "IoT | Mobile",
-    tech: ["React Native", "IoT", "Bluetooth BLE"],
-    desc: "Award-winning project. Developed a mobile interface visualizing real-time power generation data from smart shoes. Implemented seamless Bluetooth communication for live data tracking.",
-    link: "https://github.com/Oshadhi2003"
-  },
-  {
-    title: "MORKS Dermatology Platform",
-    category: "Web | Frontend",
-    tech: ["React.js", "Video UI", "Prototyping"],
-    desc: "Developed a high-fidelity web prototype connecting users with dermatologists. Features a custom interactive video player interface designed for engaging skincare tutorials.",
-    link: "https://github.com/Oshadhi2003"
-  },
-  {
-    title: "Mobile Repair Shop System",
-    category: "Full Stack | Dashboard",
-    tech: ["React.js", "Admin Dashboard"],
-    desc: "Built a complex Single Page Application (SPA) featuring a dual-interface: a public customer status tracking portal and a secure, data-rich admin dashboard for inventory management.",
-    link: "https://github.com/Oshadhi2003"
-  },
-  {
-    title: "Personal Portfolio",
-    category: "Web | Design",
-    tech: ["React.js", "Tailwind CSS"],
-    desc: "Designed a fully responsive portfolio with a glassmorphism aesthetic. Utilized React for modular architecture and Tailwind for rapid, pixel-perfect UI development.",
+    title: "TestLang++ (QA Tool)",
+    category: "QA Automation | Compiler",
+    tech: ["Java", "JUnit 5", "Spring Boot"],
+    desc: "Developed a specialized automation tool and custom DSL to streamline API testing workflows by converting lightweight scripts into robust JUnit 5 test cases.",
     link: "https://github.com/Oshadhi2003"
   },
   {
     title: "Distributed Payment System",
-    category: "Backend | Distributed",
+    category: "Backend | DevOps",
     tech: ["Python", "gRPC", "Consensus Algos"],
-    desc: "A fault-tolerant backend system handling concurrent transactions. Implemented custom consensus algorithms for ledger synchronization and automated node recovery.",
+    desc: "Engineered a fault-tolerant distributed system to process concurrent transactions. Implemented automated node recovery and custom consensus mechanisms for high availability.",
     link: "https://github.com/Oshadhi2003"
   },
   {
-    title: "TestLang++ (DX Tool)",
-    category: "Compiler Design",
-    tech: ["Java", "JFlex/CUP", "Spring Boot"],
-    desc: "Improved Developer Experience (DX) by creating a custom Domain-Specific Language (DSL). The tool compiles lightweight scripts into robust JUnit 5 API test cases.",
+    title: "Mobile Repair Shop System",
+    category: "Full-Stack | BA",
+    tech: ["React.js", "State Management", "SPA"],
+    desc: "Analyzed business requirements to build a dual-interface SPA, featuring a secure Admin Dashboard for inventory management and a public portal for real-time customer status tracking.",
+    link: "https://github.com/Oshadhi2003"
+  },
+  {
+    title: "Mentora - AI Career App",
+    category: "Frontend | BA",
+    tech: ["React Native", "HCI Principles"],
+    desc: "Acted as a bridge between user needs and technical implementation. Engineered a cross-platform mobile app applying strict HCI principles validated through user testing.",
+    link: "https://github.com/Oshadhi2003"
+  },
+  {
+    title: "Kinetic Kicks (Smart Shoe)",
+    category: "IoT | Integration",
+    tech: ["React Native", "IoT", "Bluetooth BLE"],
+    desc: "Award-winning project. Engineered a responsive mobile dashboard that communicates seamlessly with embedded hardware via Bluetooth to visualize live power generation data.",
     link: "https://github.com/Oshadhi2003"
   },
   {
     title: "Naval Battle Simulator",
-    category: "Game Dev | C",
+    category: "Logic | C Programming",
     tech: ["C Language", "Simulation Logic"],
-    desc: "Developed a strategic combat simulator modeling ship damage logic and shot probability. Implemented progressive difficulty levels and memory management in C.",
+    desc: "Developed a strategic combat simulator modeling complex ship damage logic and shot probability. Implemented progressive difficulty levels and strict memory management.",
     link: "https://github.com/Oshadhi2003"
   }
 ];
@@ -194,7 +185,7 @@ function App() {
             animate={{ opacity: 1, y: 0 }}
             className="inline-block px-3 py-1 mb-5 border border-purple-500/30 rounded-full bg-purple-500/10 text-purple-300 text-sm font-mono tracking-wide backdrop-blur-md"
           >
-            🚀 Frontend Engineer & CS Undergraduate
+            🚀 Computer Science Undergraduate & Software Developer | Actively Seeking Internships
           </motion.div>
           
           <motion.h1 
@@ -217,7 +208,7 @@ function App() {
             transition={{ delay: 1.5, duration: 1 }}
             className="text-lg md:text-xl text-purple-200/80 mb-8 leading-relaxed font-light"
           >
-            Passionate about crafting <span className="text-white font-medium">pixel-perfect</span> user interfaces and accessible web experiences. I leverage a strong foundation in <span className="text-white font-medium">Computer Science</span> to build scalable, clean, and efficient frontend solutions.
+            Passionate about building robust, scalable systems—ranging from <span className="text-white font-medium">full-stack web applications</span> to distributed backend architectures and automated testing tools. I leverage a strong foundation in Computer Science to bridge the gap between business requirements <span className="text-white font-medium">(BA)</span>, system design, and quality assurance<span className="text-white font-medium">(QA)</span>.
           </motion.p>
 
           <motion.div 
@@ -231,7 +222,7 @@ function App() {
               View Work
             </a>
 
-            {/* NEW Resume Button */}
+            {/* Resume Button */}
             <a 
               href="/resume.pdf" 
               target="_blank" 
@@ -250,8 +241,8 @@ function App() {
                 <Linkedin size={24}/>
               </a>
               <a href="#contact" className="text-purple-300 hover:text-white transition-colors">
-  <Mail size={24}/>
-</a>
+                <Mail size={24}/>
+              </a>
             </div>
           </motion.div>
         </div>
@@ -265,21 +256,21 @@ function App() {
         </motion.div>
       </section>
 
-      {/* --- TECH STACK (More Visible & Categorized) --- */}
+      {/* --- TECH STACK (UPDATED TO 4 COLUMNS) --- */}
       <section className="py-20 bg-[#130820] border-y border-white/5">
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">Technical Skills</h2>
-            <p className="text-purple-300/60">A toolkit built on Engineering Principles & Modern Design</p>
+            <p className="text-purple-300/60">A full-stack toolkit built on Engineering Principles & Modern Design</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Frontend Column */}
-            <div className="p-6 rounded-2xl bg-white/5 border border-purple-500/20">
-              <h3 className="text-xl font-bold mb-6 text-purple-300 flex items-center gap-2"><Layout size={20}/> Frontend & Design</h3>
-              <div className="flex flex-wrap gap-3">
+            <div className="p-6 rounded-2xl bg-white/5 border border-purple-500/20 hover:bg-white/10 transition-colors">
+              <h3 className="text-lg font-bold mb-6 text-purple-300 flex items-center gap-2"><Layout size={20}/> Frontend & Mobile</h3>
+              <div className="flex flex-col gap-3">
                 {techStack.frontend.map((tech, i) => (
-                  <span key={i} className="flex items-center gap-2 px-3 py-2 bg-[#1e0b36] rounded-lg text-sm border border-purple-500/10 hover:border-purple-400 hover:text-white transition-colors">
+                  <span key={i} className="flex items-center gap-3 px-3 py-2.5 bg-[#1e0b36] rounded-lg text-sm border border-purple-500/10 text-purple-100">
                     <span className="text-purple-400">{tech.icon}</span> {tech.name}
                   </span>
                 ))}
@@ -287,23 +278,35 @@ function App() {
             </div>
 
             {/* Backend Column */}
-            <div className="p-6 rounded-2xl bg-white/5 border border-purple-500/20">
-              <h3 className="text-xl font-bold mb-6 text-indigo-300 flex items-center gap-2"><Database size={20}/> Backend & Core</h3>
-              <div className="flex flex-wrap gap-3">
+            <div className="p-6 rounded-2xl bg-white/5 border border-indigo-500/20 hover:bg-white/10 transition-colors">
+              <h3 className="text-lg font-bold mb-6 text-indigo-300 flex items-center gap-2"><Database size={20}/> Backend & Arch</h3>
+              <div className="flex flex-col gap-3">
                 {techStack.backend.map((tech, i) => (
-                  <span key={i} className="flex items-center gap-2 px-3 py-2 bg-[#1e0b36] rounded-lg text-sm border border-indigo-500/10 hover:border-indigo-400 hover:text-white transition-colors">
+                  <span key={i} className="flex items-center gap-3 px-3 py-2.5 bg-[#1e0b36] rounded-lg text-sm border border-indigo-500/10 text-indigo-100">
                     <span className="text-indigo-400">{tech.icon}</span> {tech.name}
                   </span>
                 ))}
               </div>
             </div>
 
-            {/* Tools Column */}
-            <div className="p-6 rounded-2xl bg-white/5 border border-purple-500/20">
-              <h3 className="text-xl font-bold mb-6 text-fuchsia-300 flex items-center gap-2"><GitBranch size={20}/> Tools & Methods</h3>
-              <div className="flex flex-wrap gap-3">
-                {techStack.tools.map((tech, i) => (
-                  <span key={i} className="flex items-center gap-2 px-3 py-2 bg-[#1e0b36] rounded-lg text-sm border border-fuchsia-500/10 hover:border-fuchsia-400 hover:text-white transition-colors">
+            {/* QA Column */}
+            <div className="p-6 rounded-2xl bg-white/5 border border-emerald-500/20 hover:bg-white/10 transition-colors">
+              <h3 className="text-lg font-bold mb-6 text-emerald-300 flex items-center gap-2"><CheckCircle size={20}/> QA & Testing</h3>
+              <div className="flex flex-col gap-3">
+                {techStack.qa.map((tech, i) => (
+                  <span key={i} className="flex items-center gap-3 px-3 py-2.5 bg-[#1e0b36] rounded-lg text-sm border border-emerald-500/10 text-emerald-100">
+                    <span className="text-emerald-400">{tech.icon}</span> {tech.name}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* DevOps/BA Column */}
+            <div className="p-6 rounded-2xl bg-white/5 border border-fuchsia-500/20 hover:bg-white/10 transition-colors">
+              <h3 className="text-lg font-bold mb-6 text-fuchsia-300 flex items-center gap-2"><GitBranch size={20}/> DevOps & Tools</h3>
+              <div className="flex flex-col gap-3">
+                {techStack.devops.map((tech, i) => (
+                  <span key={i} className="flex items-center gap-3 px-3 py-2.5 bg-[#1e0b36] rounded-lg text-sm border border-fuchsia-500/10 text-fuchsia-100">
                     <span className="text-fuchsia-400">{tech.icon}</span> {tech.name}
                   </span>
                 ))}
@@ -319,7 +322,7 @@ function App() {
           <div className="mb-16 md:text-center max-w-3xl mx-auto">
             <h2 className="text-4xl font-bold mb-4 text-white">Featured Projects</h2>
             <p className="text-purple-200/60">
-              A complete showcase of my work in Software Engineering and UI/UX Design.
+              A complete showcase of my work spanning the Software Development Life Cycle.
             </p>
           </div>
           
